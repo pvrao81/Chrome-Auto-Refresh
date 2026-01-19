@@ -5,30 +5,30 @@ The Auto Page Refresher is a simple yet powerful Chrome extension designed to au
 Built with Manifest V3 for compatibility with modern Chrome versions, it uses efficient background alarms to handle refreshes, ensuring minimal resource usage even when the extension is running in the background.
 
 **Features**
---Custom Refresh Intervals: Set any interval in seconds (minimum 1 second) via the popup.
---Start/Stop Controls: Easily start or stop refreshing from the popup or using keyboard shortcuts.
+- Custom Refresh Intervals: Set any interval in seconds (minimum 1 second) via the popup.
+- Start/Stop Controls: Easily start or stop refreshing from the popup or using keyboard shortcuts.
 **Keyboard Shortcuts:**
-  -Start refresh: Ctrl+Shift+S (or Command+Shift+S on Mac)
-  -Stop refresh: Ctrl+Shift+T (or Command+Shift+T on Mac)
-  -Open settings popup: Ctrl+Shift+P (or Command+Shift+P on Mac)
--- Persistent Settings: The chosen interval is saved and reused across sessions.
--- Targeted Refresh: Refreshes only the active tab where the refresh was initiated.
--- Efficient Background Operation: Utilizes Chrome's alarms API for scheduled reloads, which is battery-friendly and works even if the tab is inactive.
--- Status Feedback: Displays messages in the popup for actions like starting, stopping, or invalid inputs.
--- Optional Notifications: Alerts the user if trying to start without a set interval (requires "notifications" permission).
+  - Start refresh: Ctrl+Shift+S (or Command+Shift+S on Mac)
+  - Stop refresh: Ctrl+Shift+T (or Command+Shift+T on Mac)
+  - Open settings popup: Ctrl+Shift+P (or Command+Shift+P on Mac)
+- Persistent Settings: The chosen interval is saved and reused across sessions.
+- Targeted Refresh: Refreshes only the active tab where the refresh was initiated.
+- Efficient Background Operation: Utilizes Chrome's alarms API for scheduled reloads, which is battery-friendly and works even if the tab is inactive.
+- Status Feedback: Displays messages in the popup for actions like starting, stopping, or invalid inputs.
+- Optional Notifications: Alerts the user if trying to start without a set interval (requires "notifications" permission).
 
 **Installation**
 From Source (Development Mode)
--Download or clone this repository to your local machine.
--Open Google Chrome and navigate to chrome://extensions/.
--Enable "Developer mode" in the top-right corner.
--Click "Load unpacked" and select the folder containing the extension files (e.g., where manifest.json is located).
--The extension icon should appear in your browser toolbar.
+- Download or clone this repository to your local machine.
+- Open Google Chrome and navigate to chrome://extensions/.
+- Enable "Developer mode" in the top-right corner.
+- Click "Load unpacked" and select the folder containing the extension files (e.g., where manifest.json is located).
+- The extension icon should appear in your browser toolbar.
 
 **From Chrome Web Store (If Published)**
 (Note: This extension is not yet published. Once uploaded to the Chrome Web Store, you can install it directly from there.)
-Search for "Auto Page Refresher" in the Chrome Web Store.
-Click "Add to Chrome" and confirm the installation.
+- Search for "Auto Page Refresher" in the Chrome Web Store.
+- Click "Add to Chrome" and confirm the installation.
 
 **Usage**
 **Set Up Interval:**
@@ -52,20 +52,20 @@ Click "Add to Chrome" and confirm the installation.
 
 **Keyboard Shortcuts**
 - Shortcuts can be customized in Chrome via chrome://extensions/shortcuts.
--- Start Refresh: Ctrl+Shift+S (Mac: Command+Shift+S) - Starts refreshing the current tab using the saved interval.
--- Stop Refresh: Ctrl+Shift+Z (Mac: Command+Shift+T) - Stops any ongoing refresh.
--- Open Popup: Ctrl+Shift+Q (Mac: Command+Shift+P) - Opens the extension's settings popup.
+- Start Refresh: Ctrl+Shift+S (Mac: Command+Shift+S) - Starts refreshing the current tab using the saved interval.
+- Stop Refresh: Ctrl+Shift+Z (Mac: Command+Shift+T) - Stops any ongoing refresh.
+- Open Popup: Ctrl+Shift+Q (Mac: Command+Shift+P) - Opens the extension's settings popup.
 
 **File Structure**
-**manifest.json: **Defines the extension's metadata, permissions, and components.
-**popup.html: **The user interface for setting intervals and controls.
-**popup.js:** Handles popup logic, user input, and communication with the background script.
-**background.js:** Manages alarms, tab reloading, and shortcut listeners.
-**icons:** icon16.png, icon48.png, icon128.png: Extension icons (replace with your own if needed).
+- manifest.json: Defines the extension's metadata, permissions, and components.
+- popup.html: The user interface for setting intervals and controls.
+- popup.js: Handles popup logic, user input, and communication with the background script.
+- background.js: Manages alarms, tab reloading, and shortcut listeners.
+- icons: icon16.png, icon48.png, icon128.png: Extension icons (replace with your own if needed).
 
 **Development and Customization**
 **Prerequisites**
--Google Chrome browser.
+- Google Chrome browser.
 - Basic knowledge of JavaScript, HTML, and Chrome Extension APIs.
 
 **Building and Testing**
@@ -87,6 +87,7 @@ Click "Add to Chrome" and confirm the installation.
 - Internationalization: Add support for multiple languages in the popup.
 
 To implement these, modify popup.js and background.js accordingly, and update manifest.json if new permissions are required (e.g., "notifications" for alerts).
+
 **Permissions Explained**
 - tabs: To query and reload the active tab.
 - storage: To save and retrieve the refresh interval.
@@ -101,8 +102,10 @@ To implement these, modify popup.js and background.js accordingly, and update ma
 
 **Contributing**
 - Contributions are welcome! Fork the repository, make your changes, and submit a pull request. Please include tests or descriptions of your changes.
+
 **License**
 - This project is licensed under the MIT License. See the LICENSE file for details.
 (Note: Create a LICENSE file in your repository with the MIT license text if not already present.)
+
 **Contact**
 For questions or suggestions, reach out via GitHub issues or contact the developer.
